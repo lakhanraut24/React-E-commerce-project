@@ -30,7 +30,7 @@ const Navbar = () => {
 
               <ul className="hidden md:flex px-1 mx-auto  pl-4  font-heading text-lg font-bold space-x-12">
                 <li>
-                  <a className="text-blue-500 hover:bg-sky-700 " href="#">
+                  <a className="text-blue-500 hover:bg-red-700 " href="#">
                     HOME
                   </a>
                 </li>
