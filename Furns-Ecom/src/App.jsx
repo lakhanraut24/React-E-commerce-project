@@ -1,26 +1,29 @@
 import * as React from "react";
-import {  BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Components/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
 import Navbar from "./Components/Header/Navbar";
 import Footer from "./Components/Footer/Footer";
-import About from "./Components/About";
 import Cart from "./Cart";
+import Contact from "./Components/Pages/Contact";
+import Admin from "./Components/Pages/Admin";
+import Products from "./Components/Products";
+import About from "./Components/Pages/About";
 function App() {
   return (
     <>
-      
-      <Navbar/>
+      <Navbar />
       <BrowserRouter>
-      
-      
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/Cart" element={<Cart/>} />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/Admin" element={<Admin/>} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
-      </>
+      <Footer />
+    </>
   );
 }
-export default App
+export default App;

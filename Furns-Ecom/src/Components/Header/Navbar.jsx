@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,7 +8,7 @@ const Navbar = () => {
         <section className="relative mx-auto">
           <nav className="flex justify-between bg-white-900 text-black w-screen">
             <div className="px-5 xl:px-12 py-6 flex w-full items-center">
-              <a className="text-3xl font-bold font-heading" href="#">
+              <a className="text-3xl font-bold font-heading" href="/">
                 <div className="group flex items-center">
                   <img
                     className="h-14 "
@@ -30,22 +31,22 @@ const Navbar = () => {
 
               <ul className="hidden md:flex px-1 mx-auto  pl-4  font-heading text-lg font-bold space-x-12">
                 <li>
-                  <a className="text-blue-500 hover:bg-sky-700 " href="#">
+                  <a className="text-blue-500 hover:bg-sky-700 " href="/">
                     HOME
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-white-200 " href="#">
+                  <a className="hover:text-white-200 " href="/About">
                     ABOUT
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <a className="hover:text-gray-200" href="/Products">
                     PRODUCTS
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <a className="hover:text-gray-200" href="/Contact">
                     CONTACT 
                   </a>
                 </li>
@@ -53,8 +54,8 @@ const Navbar = () => {
 
               <div className="hidden xl:flex items-center space-x-5 items-center mr-4">
                 
-                <a className="flex items-center hover:text-gray-200" href="#">
-                <span className="font-bold text-xl">cart <span>(0)</span></span>
+                <a className="flex items-center hover:text-gray-200" href="/Cart">
+                <span className="font-bold text-xl cartCount">Cart: 5</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -73,7 +74,7 @@ const Navbar = () => {
                  
                 </a>
 
-                <a className="flex items-center hover:text-gray-200" href="#">
+                <a className="flex items-center hover:text-gray-200" href="/Admin">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 hover:text-gray-200"
