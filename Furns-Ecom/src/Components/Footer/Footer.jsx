@@ -16,7 +16,7 @@ const Footer = () => {
                   <img
                    src="assets/Images/LRlogo.png"
                     alt="logo"
-                    className="max-w-full"
+                    className="max-w-full img"
                   />
                 </a>
                 <p className="text-base text-body-color font-bold mb-7">

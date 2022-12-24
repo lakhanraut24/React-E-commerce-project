@@ -12,7 +12,13 @@ body {
     padding: 20px;
     background: rgb(240, 223, 223);
 }
+img {
+    height: 500px;
+}
+.img{
+    height: 80px;
 
+}
 .card {
     background: white;
     padding: 20px;

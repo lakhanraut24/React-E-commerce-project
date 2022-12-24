@@ -1,24 +1,22 @@
-import React from 'react'
-import Arrivals from './Arrivals'
-import Banner from './Banner'
-import Feature from './Feature'
-import Products from './Products'
-import Subscribe from './Subscribe'
+import React from "react";
+
+import Banner from "./Pages/Banner";
+
+import Products from "./Products";
 
 const Home = () => {
   return (
     <>
-    <Banner/>
-    <Feature/>
-    <Arrivals/>
-    <Products/>
-    <Subscribe/>
-    <div>
-      <h1 className='text-center font-bold text-lg'>this is product page</h1>
-      
-    </div>
-    </>
-  )
-}
+      <Banner />
 
-export default Home
+      <div>
+        <h1 className="text-center text-5xl font-bold mb-16 mt-10 ">
+          <span>Our</span> <u>pro</u>ducts
+        </h1>
+        <Products />
+      </div>
+    </>
+  );
+};
+
+export default Home;

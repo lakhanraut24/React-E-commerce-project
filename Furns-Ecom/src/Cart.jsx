@@ -6,7 +6,7 @@ const Cart = () => {
     <h3>Cart</h3>
     <div className="cartWrapper">
        
-            <div key={product.id} className="cartCard">
+            <div  className="cartCard">
                 <img src='' alt="" />
                 <h5>title</h5>
                 <h5>price</h5>

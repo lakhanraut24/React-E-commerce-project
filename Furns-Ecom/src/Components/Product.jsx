@@ -1,17 +1,19 @@
 import React from 'react'
 
-const Product = () => {
+const Product = (props) => {
+
+  const {product} = props;
   return (
     <div >
     
-         <a href="https://www.kindacode.com"
-            class="card flex flex-col pt-8 bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
-            <img src="assets/Images/p1.png" alt="Fiction Product"
-                class="ml-32 w-36 h-34 object-cover rounded-tl-md rounded-tr-md"/>
+         <a 
+            className="card flex flex-col pt-8 bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
+            <img src={product.image} alt="Fiction Product"
+                className="img ml-32 w-36  object-cover rounded-tl-md rounded-tr-md"/>
 
-            <div class="px-3 ml-8  p-8 flex ">
-                <h1 class="font-bold text-xl ml-6 mr-4">Product Two</h1>
-                <p class="text-sm ml-14 text-xl">$69.69</p>
+            <div className="px-3 ml-8  p-8 flex ">
+                <h1 className="font-bold text-xl ml-6 mr-4">{product.title}</h1>
+                <p className="text-sm ml-14 text-xl">{product.price}rs</p>
                
             </div>
         </a>
