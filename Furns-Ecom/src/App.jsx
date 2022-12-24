@@ -13,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <BrowserRouter>
+
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/Cart" element={<Cart />} />
